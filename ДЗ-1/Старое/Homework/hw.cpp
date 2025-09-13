@@ -94,19 +94,3 @@ int numberCatalan(int n)
 	}
 	return res;
 }
-
-///// <summary>
-///// Формирует новое число, нечетные разряды которого совпадают с соответствующими разрядами исходного числа, а четные равны нулю
-///// </summary>
-///// <param name="a">Исходное число</param>
-//void numberTransform(int& a)
-//{
-//	int sign = a > 0 ? 1 : a < 0 ? -1 : 0;
-//	a = abs(a);
-//	int copy = a, pow = 1;
-//	while (copy > 0)
-//	{
-//		cop
-//		pow *= 10;
-//	}
-//}

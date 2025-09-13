@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Homework\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u0421\u0442\u0430\u0440\u043E\u0435\\Homework\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8BE8A413-639B-4614-8745-546E83427A1F}|Homework.vcxproj|C:\\Users\\User\\Desktop\\Homework\\hw.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{8BE8A413-639B-4614-8745-546E83427A1F}|Homework.vcxproj|C:\\Users\\User\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u0421\u0442\u0430\u0440\u043E\u0435\\Homework\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8BE8A413-639B-4614-8745-546E83427A1F}|Homework.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BE8A413-639B-4614-8745-546E83427A1F}|Homework.vcxproj|C:\\Users\\User\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u0421\u0442\u0430\u0440\u043E\u0435\\Homework\\hw.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8BE8A413-639B-4614-8745-546E83427A1F}|Homework.vcxproj|solutionrelative:hw.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BE8A413-639B-4614-8745-546E83427A1F}|Homework.vcxproj|C:\\Users\\User\\Desktop\\Homework\\hw.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{8BE8A413-639B-4614-8745-546E83427A1F}|Homework.vcxproj|C:\\Users\\User\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u0421\u0442\u0430\u0440\u043E\u0435\\Homework\\hw.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8BE8A413-639B-4614-8745-546E83427A1F}|Homework.vcxproj|solutionrelative:hw.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BE8A413-639B-4614-8745-546E83427A1F}|Homework.vcxproj|C:\\Users\\User\\Desktop\\Homework\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8BE8A413-639B-4614-8745-546E83427A1F}|Homework.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Homework\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u0421\u0442\u0430\u0440\u043E\u0435\\Homework\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Homework\\main.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u0421\u0442\u0430\u0440\u043E\u0435\\Homework\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwEQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-11T13:44:48.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "hw.cpp",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Homework\\hw.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u0421\u0442\u0430\u0440\u043E\u0435\\Homework\\hw.cpp",
               "RelativeDocumentMoniker": "hw.cpp",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Homework\\hw.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u0421\u0442\u0430\u0440\u043E\u0435\\Homework\\hw.cpp",
               "RelativeToolTip": "hw.cpp",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAG4AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAF8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-11T13:45:37.575Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "hw.h",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Homework\\hw.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u0421\u0442\u0430\u0440\u043E\u0435\\Homework\\hw.h",
               "RelativeDocumentMoniker": "hw.h",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Homework\\hw.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u0421\u0442\u0430\u0440\u043E\u0435\\Homework\\hw.h",
               "RelativeToolTip": "hw.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-11T13:53:16.294Z",
               "EditorCaption": ""

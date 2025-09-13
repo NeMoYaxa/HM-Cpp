@@ -26,3 +26,6 @@ bool isArmstrong(int);
 
 // Выводит ромбовитый паттерн
 void printNumberDiamond(int);
+
+// Находит ежемесячный аннуитетный платеж
+double calculateMonthlyPayment(double, double, int);

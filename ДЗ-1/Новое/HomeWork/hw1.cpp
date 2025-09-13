@@ -198,3 +198,22 @@ void printNumberDiamond(int n)
 		cout << endl;
 	}
 }
+
+/// <summary>
+/// Находит ежемесячный аннуитетный платеж
+/// </summary>
+/// <param name="loan">Сумма кредита</param>
+/// <param name="rate">Годовая процентная ставка в процентах</param>
+/// <param name="years">Срок кредита в годах</param>
+/// <returns>Ежемесячный аннуитетный платеж</returns>
+double calculateMonthlyPayment(double loan, double rate, int years)
+{
+	assert(loan > 0 && rate > 0 && years > 0);
+	double monthly_rate = rate / 100 / 12;
+	int n = years * 12;
+	double monthly_payment = 0, percent = 1;
+	for (int i = 1; i <= n; i++)
+		percent *= 1 + monthly_rate;
+	monthly_payment = loan * (monthly_rate * percent) / (percent - 1);
+	return monthly_payment;
+}
