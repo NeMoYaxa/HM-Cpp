@@ -1,7 +1,7 @@
 ﻿  hw1.cpp
-C:\Users\User\Desktop\HM-Cpp\ДЗ-1\Новое\HomeWork\hw1.cpp(18,13): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-C:\Users\User\Desktop\HM-Cpp\ДЗ-1\Новое\HomeWork\hw1.cpp(93,9): warning C4244: return: преобразование "double" в "int", возможна потеря данных
-C:\Users\User\Desktop\HM-Cpp\ДЗ-1\Новое\HomeWork\hw1.cpp(166,15): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\0\Desktop\HM-Cpp\ДЗ-1\Новое\HomeWork\hw1.cpp(18,13): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\0\Desktop\HM-Cpp\ДЗ-1\Новое\HomeWork\hw1.cpp(93,9): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\0\Desktop\HM-Cpp\ДЗ-1\Новое\HomeWork\hw1.cpp(166,15): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
   main.cpp
   Создание кода...
-  HomeWork.vcxproj -> C:\Users\User\Desktop\HM-Cpp\ДЗ-1\Новое\HomeWork\x64\Debug\HomeWork.exe
+  HomeWork.vcxproj -> C:\Users\0\Desktop\HM-Cpp\ДЗ-1\Новое\HomeWork\x64\Debug\HomeWork.exe
