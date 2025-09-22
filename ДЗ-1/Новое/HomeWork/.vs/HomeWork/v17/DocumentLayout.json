@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\0\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u041D\u043E\u0432\u043E\u0435\\HomeWork\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B77D8E58-1DDC-4976-8C34-15558A12C169}|HomeWork.vcxproj|C:\\Users\\0\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u041D\u043E\u0432\u043E\u0435\\HomeWork\\hw1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B77D8E58-1DDC-4976-8C34-15558A12C169}|HomeWork.vcxproj|solutionrelative:hw1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B77D8E58-1DDC-4976-8C34-15558A12C169}|HomeWork.vcxproj|C:\\Users\\0\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u041D\u043E\u0432\u043E\u0435\\HomeWork\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B77D8E58-1DDC-4976-8C34-15558A12C169}|HomeWork.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B77D8E58-1DDC-4976-8C34-15558A12C169}|HomeWork.vcxproj|C:\\Users\\0\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u041D\u043E\u0432\u043E\u0435\\HomeWork\\hw1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B77D8E58-1DDC-4976-8C34-15558A12C169}|HomeWork.vcxproj|solutionrelative:hw1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B77D8E58-1DDC-4976-8C34-15558A12C169}|HomeWork.vcxproj|C:\\Users\\0\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u041D\u043E\u0432\u043E\u0435\\HomeWork\\hw1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B77D8E58-1DDC-4976-8C34-15558A12C169}|HomeWork.vcxproj|solutionrelative:hw1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,37 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\0\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u041D\u043E\u0432\u043E\u0435\\HomeWork\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\0\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u041D\u043E\u0432\u043E\u0435\\HomeWork\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAH8AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-12T10:35:12.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "hw1.cpp",
               "DocumentMoniker": "C:\\Users\\0\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u041D\u043E\u0432\u043E\u0435\\HomeWork\\hw1.cpp",
               "RelativeDocumentMoniker": "hw1.cpp",
               "ToolTip": "C:\\Users\\0\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u041D\u043E\u0432\u043E\u0435\\HomeWork\\hw1.cpp",
               "RelativeToolTip": "hw1.cpp",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAqwMgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-12T10:36:36.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "hw1.h",
               "DocumentMoniker": "C:\\Users\\0\\Desktop\\HM-Cpp\\\u0414\u0417-1\\\u041D\u043E\u0432\u043E\u0435\\HomeWork\\hw1.h",
               "RelativeDocumentMoniker": "hw1.h",
@@ -60,7 +60,8 @@
               "RelativeToolTip": "hw1.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-12T10:36:46.915Z"
+              "WhenOpened": "2025-09-12T10:36:46.915Z",
+              "EditorCaption": ""
             }
           ]
         }
