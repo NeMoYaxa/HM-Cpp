@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 #include <cassert>
 #include "hw-3.h"
 
@@ -66,4 +67,14 @@ int maxLengthRussianWord(const string& str)
 	if (cnt > max)
 		max = cnt;
 	return max;
+}
+
+string concatenationStringWithDelimitr(const vector<string> vec, const string& str)
+{
+	int size = str.size();
+	assert(size > 0);
+	string res = "";
+	for (auto& s : vec)
+		res += s + str;
+	return res;
 }

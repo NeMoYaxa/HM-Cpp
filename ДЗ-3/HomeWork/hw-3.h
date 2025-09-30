@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <vector>
 
 /// <summary>
 /// ѕровер€ет €в-с€ ли строка палиндромом
@@ -22,3 +23,11 @@ int stringToInt(const std::string& str, int b);
 /// <param name="str">- строка с русскими символами</param>
 /// <returns>ƒлина самого длинного слова</returns>
 int maxLengthRussianWord(const std::string& str);
+
+/// <summary>
+/// ‘ормирует из данного вектора одну строку посредством конкатенации через строку-разделитель
+/// </summary>
+/// <param name="vec">- вектор строк</param>
+/// <param name="str">- строка-разделитель</param>
+/// <returns>Ќова€ строка</returns>
+std::string concatenationStringWithDelimitr(const std::vector<std::string> vec, const std::string& str);
