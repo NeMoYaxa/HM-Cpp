@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <cassert>
+#include <windows.h>
 #include "hw-3.h"
 
 using namespace std;
@@ -9,6 +10,8 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 	cout << boolalpha;
 	string str;
 	int b;
@@ -24,7 +27,7 @@ int main()
 	cout << "Строка преобразованное в число = " << stringToInt(str, b) << endl;
 
 	// Задание 3
-	cout << endl << "Задание 3" << endl << "Введите строку str, состояющую из русских символов и минимум 1-го пробела = ";
+	cout << endl << "Задание 3" << endl << "Введите строку str, состояющую из русских букв и минимум 1-го пробела = ";
 	cin.get();
 	getline(cin, str);
 	cout << "Длина самого длинного слова = " << maxLengthRussianWord(str) << endl;
@@ -41,7 +44,16 @@ int main()
 	// Задание 5
 	cout << endl << "Задание 5" << endl << "Введите длину строки b = ";
 	cin >> b;
-	cout << "Строка из строчных английских букв в алфавитном порядке = " << latinicAlphabetLengthN(b);
+	cout << "Строка из строчных английских букв в алфавитном порядке = " << latinicAlphabetLengthN(b) << endl;
+
+	// Задание 6
+	cout << endl << "Задание 6" << endl << "Введите строку str, состояющую из русских заглавных букв и минимум 1-го пробела = ";
+	cin.get();
+	getline(cin, str);
+	cout << "Вектор из русских слов: ";
+	for (auto& word : createRussianWordsVector(str))
+		cout << word << " ";
+	cout << endl;
 }
 
 /*
@@ -54,7 +66,7 @@ int main()
 Строка преобразованное в число = -132
 
 Задание 3
-Введите строку str, состояющую из русских символов и минимум 1-го пробела = мука Победа
+Введите строку str, состояющую из русских букв и минимум 1-го пробела = мука Победа
 Длина самого длинного слова = 6
 
 Задание 4
@@ -64,4 +76,8 @@ int main()
 Задание 5
 Введите длину строки b = 27
 Строка из строчных английских букв в алфавитном порядке = abcdefghijklmnopqrstuvwxyza
+
+Задание 6
+Введите строку str, состояющую из русских заглавных букв и минимум 1-го пробела = СТОЛ СТУЛ  ВЕРСТАК
+Вектор из русских слов: СТОЛ СТУЛ ВЕРСТАК
 */

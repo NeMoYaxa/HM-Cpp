@@ -38,3 +38,10 @@ std::string concatenationStringWithDelimitr(const std::vector<std::string> vec, 
 /// <param name="n">- длина строки</param>
 /// <returns>Строку из строчных английских букв</returns>
 std::string latinicAlphabetLengthN(int n);
+
+/// <summary>
+/// 
+/// </summary>
+/// <param name="str">- строка из русских слов, набранных заглавными буквами и разделенных пробелами</param>
+/// <returns>Вектор русских слов</returns>
+std::vector<std::string> createRussianWordsVector(const std::string& str);

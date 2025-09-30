@@ -77,6 +77,7 @@ string concatenationStringWithDelimitr(const vector<string> vec, const string& s
 {
 	size_t size = str.size(), size_vec = vec.size();
 	assert(size > 0);
+
 	string res = "";
 	for (int i = 0; i < size_vec; i++)
 		if (i != size_vec - 1)
@@ -89,8 +90,38 @@ string concatenationStringWithDelimitr(const vector<string> vec, const string& s
 string latinicAlphabetLengthN(int n)
 {
 	assert(n >= 0);
+
 	string res = "";
 	for (int i = 0; i < n; i++)
 		res += 'a' + (i % 26);
+	return res;
+}
+
+
+vector<string> createRussianWordsVector(const string& str)
+{
+	size_t size = str.size();
+	assert(size > 0 && str.contains(' ') /*&& [](const string& s, int size) {
+		for (int i = 0; i < size; i++)
+		{
+			unsigned char c = s[i];
+			if (!((c >= 'À' && c <= 'ß') || c == '¨' || c == ' '))
+				return false;
+		}
+		return true;
+		}(str, size)*/);
+
+	vector<string> res;
+	string curr = "";
+	for (const char& c : str)
+		if (c != ' ')
+			curr += c;
+		else if (curr.size() > 0)
+		{
+			res.push_back(curr);
+			curr = "";
+		}
+	if (curr.size() > 0)
+		res.push_back(curr);
 	return res;
 }
