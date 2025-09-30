@@ -45,3 +45,26 @@ std::string latinicAlphabetLengthN(int n);
 /// <param name="str">- строка из русских слов, набранных заглавными буквами и разделенных пробелами</param>
 /// <returns>¬ектор русских слов</returns>
 std::vector<std::string> createRussianWordsVector(const std::string& str);
+
+/// <summary>
+/// ƒанные о слове
+/// </summary>
+struct dataWords
+{
+	/// <summary>
+	/// »ндекс начала слова в строке
+	/// </summary>
+	int index_word_start;
+
+	/// <summary>
+	/// ƒлина слова
+	/// </summary>
+	int length;
+};
+
+/// <summary>
+/// ‘ормирует вектор структур данных о слове
+/// </summary>
+/// <param name="str">- строка из английских слов, набранных заглавными буквами и разделенных пробелами</param>
+/// <returns>¬ектор данных о слове</returns>
+std::vector<dataWords> createEnglishDataWordsVector(const std::string& str);

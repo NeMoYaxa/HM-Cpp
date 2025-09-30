@@ -51,9 +51,16 @@ int main()
 	cin.get();
 	getline(cin, str);
 	cout << "Вектор из русских слов: ";
-	for (auto& word : createRussianWordsVector(str))
+	for (const string& word : createRussianWordsVector(str))
 		cout << word << " ";
 	cout << endl;
+
+	// Задание 7
+	cout << endl << "Задание 7" << endl << "Введите строку str, состояющую из английских заглавных букв и минимум 1-го пробела = ";
+	getline(cin, str);
+	cout << "Вектор структур данных о словах в строке:" << endl;
+	for (const dataWords& word : createEnglishDataWordsVector(str))
+		cout << "Индекс начала слова = " << word.index_word_start << ", длина слова = " << word.length << endl;
 }
 
 /*
@@ -80,4 +87,11 @@ int main()
 Задание 6
 Введите строку str, состояющую из русских заглавных букв и минимум 1-го пробела = СТОЛ СТУЛ  ВЕРСТАК
 Вектор из русских слов: СТОЛ СТУЛ ВЕРСТАК
+
+Введите строку str, состояющую из английских заглавных букв и минимум 1-го пробела = ZZZZ WW  YY
+ZZZZ WW  YY
+Вектор структур данных о словах в строке:
+Индекс начала слова = 0, длина слова = 4
+Индекс начала слова = 5, длина слова = 2
+Индекс начала слова = 9, длина слова = 2
 */

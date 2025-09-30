@@ -97,7 +97,6 @@ string latinicAlphabetLengthN(int n)
 	return res;
 }
 
-
 vector<string> createRussianWordsVector(const string& str)
 {
 	size_t size = str.size();
@@ -116,12 +115,54 @@ vector<string> createRussianWordsVector(const string& str)
 	for (const char& c : str)
 		if (c != ' ')
 			curr += c;
-		else if (curr.size() > 0)
-		{
-			res.push_back(curr);
-			curr = "";
-		}
+		else
+			if (curr.size() > 0)
+			{
+				res.push_back(curr);
+				curr = "";
+			}
 	if (curr.size() > 0)
 		res.push_back(curr);
+	return res;
+}
+
+
+vector<dataWords> createEnglishDataWordsVector(const string& str)
+{
+	size_t size = str.size();
+	assert(size > 0 && str.contains(' ') && [](const string& s, int size) {
+		for (int i = 0; i < size; i++)
+		{
+			unsigned char c = s[i];
+			if (!((c >= 'A' && c <= 'Z') || c == ' '))
+				return false;
+		}
+		return true;
+		}(str, size));
+
+	vector<dataWords> res;
+	dataWords dw{ -1, 0 };
+	bool flag = true;
+	for (int i = 0; i < size; i++)
+		if (str[i] != ' ')
+		{
+			if (flag)
+			{
+				dw.index_word_start = i;
+				flag = false;
+			}
+			dw.length += 1;
+			flag = false;
+		}
+		else
+		{
+			if (dw.length > 0)
+				res.push_back(dw);
+			dw.index_word_start = -1;
+			dw.length = 0;
+			flag = true;
+		}
+	if (dw.length > 0)
+		res.push_back(dw);
 	return res;
 }
