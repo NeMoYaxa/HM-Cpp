@@ -31,3 +31,10 @@ int maxLengthRussianWord(const std::string& str);
 /// <param name="str">- строка-разделитель</param>
 /// <returns>Ќова€ строка</returns>
 std::string concatenationStringWithDelimitr(const std::vector<std::string> vec, const std::string& str);
+
+/// <summary>
+/// ¬озвращает строку из строчных английских букв в алфавитном пор€дке длины n
+/// </summary>
+/// <param name="n">- длина строки</param>
+/// <returns>—троку из строчных английских букв</returns>
+std::string latinicAlphabetLengthN(int n);

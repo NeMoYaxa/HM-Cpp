@@ -85,3 +85,12 @@ string concatenationStringWithDelimitr(const vector<string> vec, const string& s
 			res += vec[i];
 	return res;
 }
+
+string latinicAlphabetLengthN(int n)
+{
+	assert(n >= 0);
+	string res = "";
+	for (int i = 0; i < n; i++)
+		res += 'a' + (i % 26);
+	return res;
+}
