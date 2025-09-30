@@ -14,7 +14,7 @@ bool stringIsPalindrom(const std::string& s);
 /// </summary>
 /// <param name="str">- заданная строка</param>
 /// <returns>Целое число</returns>
-int stringToInt(const std::string& str);
+int stringToInt(const std::string& str, int b);
 
 /// <summary>
 /// Находит длину самого длинного слова
