@@ -8,7 +8,7 @@ using namespace std;
 
 bool stringIsPalindrom(const string& str)
 {
-	int size = str.size();
+	size_t size = str.size();
 	assert(size > 0);
 
 	for (int i = 0; i < size / 2; i++)
@@ -19,7 +19,7 @@ bool stringIsPalindrom(const string& str)
 
 int stringToInt(const string& str, int b)
 {
-	int size = str.size();
+	size_t size = str.size();
 	assert(size > 0 && b > 0 && b <= 10 && str[0] != '0' && [](const string& s, int b, int size) {
 		int i = 0;
 		if (s[0] == '-')
@@ -47,11 +47,14 @@ int stringToInt(const string& str, int b)
 
 int maxLengthRussianWord(const string& str)
 {
-	int size = str.size();
+	size_t size = str.size();
 	assert(size > 0 && str.contains(' ') /*&& [](const string& s, int size) {
 		for (int i = 0; i < size; i++)
-			if (!((s[i] >= 'à' && s[i] <= 'ÿ') || (s[i] >= 'À' && s[i] <= 'ß') || s[i] == ' '))
+		{
+			unsigned char c = s[i];
+			if (!((c >= 'à' && c <= 'ÿ') || (c >= 'À' && c <= 'ß') || c == '¨' || c == '¸' || c == ' '))
 				return false;
+		}
 		return true;
 		}(str, size)*/);
 
@@ -59,9 +62,10 @@ int maxLengthRussianWord(const string& str)
 	for (int i = 0; i < size; i++)
 		if (str[i] != ' ')
 			cnt++;
-		else if (cnt > max)
+		else
 		{
-			max = cnt;
+			if (cnt > max)
+				max = cnt;
 			cnt = 0;
 		}
 	if (cnt > max)
@@ -71,10 +75,13 @@ int maxLengthRussianWord(const string& str)
 
 string concatenationStringWithDelimitr(const vector<string> vec, const string& str)
 {
-	int size = str.size();
+	size_t size = str.size(), size_vec = vec.size();
 	assert(size > 0);
 	string res = "";
-	for (auto& s : vec)
-		res += s + str;
+	for (int i = 0; i < size_vec; i++)
+		if (i != size_vec - 1)
+			res += vec[i] + str;
+		else
+			res += vec[i];
 	return res;
 }
