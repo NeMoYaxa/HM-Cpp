@@ -69,20 +69,20 @@ struct Employee
 	/// Добавляет умение сотруднику
 	/// </summary>
 	/// <param name="skill">- Умение</param>
-	void add_skill(std::string& skill);
+	void add_skill(const std::string& skill);
 
 	/// <summary>
 	/// Удаляет умение по названию
 	/// </summary>
 	/// <param name="skill">- Умение</param>
-	void remove_skill(std::string& skill);
+	void remove_skill(const std::string& skill);
 
 	/// <summary>
 	/// Проверяет наличие определенного умения
 	/// </summary>
 	/// <param name="skill">- Умение</param>
 	/// <returns>true или false</returns>
-	bool has_skill(std::string& skill);
+	bool has_skill(const std::string& skill);
 
 	/// <summary>
 	/// Возвращает количество умений
@@ -107,4 +107,14 @@ struct Employee
 	/// </summary>
 	/// <returns>true или false</returns>
 	bool is_eligible_for_promotion();
+
+	/// <summary>
+	/// Выводит сводку по сотруднику: ID, имя, должность, стаж, общую зарплату, количество умений
+	/// </summary>
+	void print_summary();
+
+	/// <summary>
+	/// Выводит список всех умений сотрудника
+	/// </summary>
+	void print_skills();
 };
