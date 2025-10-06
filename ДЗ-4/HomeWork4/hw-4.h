@@ -4,6 +4,16 @@
 #include <vector>
 
 /// <summary>
+/// Размер оклада для повышения
+/// </summary>
+const int promotion_salary = 100000;
+
+/// <summary>
+/// Стаж работы для повышения
+/// </summary>
+const int promotion_years_of_service = 3;
+
+/// <summary>
 /// Данные о сотруднике компании
 /// </summary>
 struct Employee
@@ -29,7 +39,7 @@ struct Employee
 	double salary;
 
 	/// <summary>
-	/// Стаж работы в компании(лет)
+	/// Стаж работы в компании (лет)
 	/// </summary>
 	int years_of_service;
 
@@ -44,12 +54,14 @@ struct Employee
 	/// <param name="name">- Имя сотрудника</param>
 	/// <param name="employee_id">- Идентификационный номер </param>
 	/// <param name="position">- Должность</param>
+	/// <param name="salary">- Оклад</param>
 	/// <param name="years_of_service">- Стаж работы в компании(лет)</param>
-	Employee(std::string name, int employee_id, std::string position, int years_of_service)
+	Employee(std::string name, int employee_id, std::string position, double salary, int years_of_service)
 	{
 		this->name = name;
 		this->employee_id = employee_id;
 		this->position = position;
+		this->salary = salary;
 		this->years_of_service = years_of_service;
 	}
 
@@ -77,4 +89,22 @@ struct Employee
 	/// </summary>
 	/// <returns>Количество умений</returns>
 	int get_skills_count();
+
+	/// <summary>
+	/// Вычисляет бонус за стаж (10% от оклада за каждый год стажа, но не более 50% от оклада)
+	/// </summary>
+	/// <returns>Бонус за стаж</returns>
+	int calculate_bonus();
+
+	/// <summary>
+	/// Вычисляет общую зарплату (оклад + бонус за стаж)
+	/// </summary>
+	/// <returns>Общая зарплата</returns>
+	double calculate_total_salary();
+
+	/// <summary>
+	/// Проверяет возможность повышения (стаж более 3 лет и оклад менее 100000)
+	/// </summary>
+	/// <returns>true или false</returns>
+	bool is_eligible_for_promotion();
 };

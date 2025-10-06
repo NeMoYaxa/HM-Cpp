@@ -35,3 +35,22 @@ int Employee::get_skills_count()
 {
 	return skills.size();
 }
+
+int Employee::calculate_bonus()
+{
+	if (years_of_service >= 5)
+		return 50;
+	return years_of_service * 10;
+}
+
+double Employee::calculate_total_salary()
+{
+	return salary + salary * static_cast<double>(calculate_bonus() / 100);
+}
+
+bool Employee::is_eligible_for_promotion()
+{
+	if (salary >= promotion_salary && years_of_service >= promotion_years_of_service)
+		return true;
+	return false;
+}
