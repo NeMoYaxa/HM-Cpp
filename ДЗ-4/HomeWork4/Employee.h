@@ -64,6 +64,11 @@ struct Employee
 	}
 
 	/// <summary>
+	/// Конуструктор по умолчанию
+	/// </summary>
+	Employee() = default;
+
+	/// <summary>
 	/// Добавляет умение сотруднику
 	/// </summary>
 	/// <param name="skill">- Умение</param>

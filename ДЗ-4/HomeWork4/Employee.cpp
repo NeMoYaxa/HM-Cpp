@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include <cassert>
-#include "hw-4.h"
+#include "Employee.h"
 
 using namespace std;
 
@@ -51,7 +51,7 @@ double Employee::calculate_total_salary()
 
 bool Employee::is_eligible_for_promotion()
 {
-	if (salary >= promotion_salary && years_of_service >= promotion_years_of_service)
+	if (salary <= promotion_salary && years_of_service >= promotion_years_of_service)
 		return true;
 	return false;
 }
