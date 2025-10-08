@@ -1,6 +1,7 @@
 #include <string>
 #include <vector>
 #include <cassert>
+#include <algorithm>
 #include "Employee.h"
 #include "AddtionalFuncs.h"
 
@@ -41,4 +42,12 @@ vector<Employee> find_eligible_for_promotion(const vector<Employee>& vec)
 		if (emp.is_eligible_for_promotion())
 			res.push_back(emp);
 	return res;
+}
+
+void sort_employees_by_salary(std::vector<Employee>& vec)
+{
+	sort(vec.begin(), vec.end(), [](Employee a, Employee b)
+		{
+			return a.salary < b.salary;
+		});
 }

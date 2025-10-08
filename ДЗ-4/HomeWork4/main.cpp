@@ -63,7 +63,7 @@ int main()
 	cout << endl;
 
 	cout << endl << "Тесты дополнительных функций:" << endl;
-	vector<Employee> vec(4);
+	vector<Employee> vec;
 	vec.push_back(emp1);
 	vec.push_back(emp2);
 	vec.push_back(emp3);
@@ -82,6 +82,10 @@ int main()
 	for (Employee emp : find_eligible_for_promotion(vec))
 		cout << emp.name << " Готов(а) к повышению  " << endl;
 	cout << endl;
+
+	sort_employees_by_salary(vec);
+	for (Employee emp : vec)
+		cout << emp.salary << endl;
 }
 
 /*
@@ -132,4 +136,9 @@ C++ C# Базы данных
 
 Мария Сидорова Готов(а) к повышению
 Яков Батуев Готов(а) к повышению
+
+80000
+81000
+95700
+110000
 */

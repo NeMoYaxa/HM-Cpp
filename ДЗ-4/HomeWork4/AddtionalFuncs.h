@@ -26,3 +26,9 @@ std::vector<Employee> find_employees_with_skill(const std::vector<Employee>& vec
 /// <param name="vec">- Вектор сотрудников</param>
 /// <returns>Вектор сотрудников</returns>
 std::vector<Employee> find_eligible_for_promotion(const std::vector<Employee>& vec);
+
+/// <summary>
+/// Cортируtn сотрудников по зарплате
+/// </summary>
+/// <param name="vec">- Вектор сотрудников</param>
+void sort_employees_by_salary(std::vector<Employee>& vec);
