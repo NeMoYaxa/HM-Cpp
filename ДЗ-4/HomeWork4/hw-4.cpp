@@ -59,10 +59,10 @@ bool Employee::is_eligible_for_promotion()
 void Employee::print_summary()
 {
 	cout << "ID = " << employee_id << endl
-		<< ", Имя = " << name << endl
-		<< ", должность = " << position << endl
-		<< ", общая зарплата = " << calculate_total_salary() << endl
-		<< ", количество умений = " << get_skills_count() << endl;
+		<< "Имя = " << name << endl
+		<< "Должность = " << position << endl
+		<< "Общая зарплата = " << calculate_total_salary() << endl
+		<< "Количество умений = " << get_skills_count() << endl;
 }
 
 void Employee::print_skills()
@@ -70,4 +70,14 @@ void Employee::print_skills()
 	for (const string& skill : skills)
 		cout << skill << " ";
 	cout << endl;
+}
+
+bool Employee::compare_by_salary(Employee emp)
+{
+	return salary > emp.salary;
+}
+
+bool Employee::compare_by_experience(Employee emp)
+{
+	return years_of_service > emp.years_of_service;
 }

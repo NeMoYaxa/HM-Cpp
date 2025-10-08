@@ -54,14 +54,12 @@ struct Employee
 	/// <param name="name">- Имя сотрудника</param>
 	/// <param name="employee_id">- Идентификационный номер </param>
 	/// <param name="position">- Должность</param>
-	/// <param name="salary">- Оклад</param>
 	/// <param name="years_of_service">- Стаж работы в компании(лет)</param>
-	Employee(std::string name, int employee_id, std::string position, double salary, int years_of_service)
+	Employee(std::string name, int employee_id, std::string position, int years_of_service)
 	{
 		this->name = name;
 		this->employee_id = employee_id;
 		this->position = position;
-		this->salary = salary;
 		this->years_of_service = years_of_service;
 	}
 
@@ -117,4 +115,18 @@ struct Employee
 	/// Выводит список всех умений сотрудника
 	/// </summary>
 	void print_skills();
+
+	/// <summary>
+	/// Cравнивает зарплату двух сотрудников (true если 1-ый зарабатывает больше, иначе false)
+	/// </summary>
+	/// <param name="emp">- Работник</param>
+	/// <returns>true или false</returns>
+	bool compare_by_salary(Employee emp);
+
+	/// <summary>
+	/// Cравнивает стаж двух сотрудников (true если 1-ый зарабатывает больше, иначе false)
+	/// </summary>
+	/// <param name="emp">- Работник</param>
+	/// <returns>true или false</returns>
+	bool compare_by_experience(Employee emp);
 };
